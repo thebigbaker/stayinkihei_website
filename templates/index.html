@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kam II Beach</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"
+</head>
+<body>
+  <header id="showcase">
+    <h1>Stay In Kihei</h1>
+    <p>Maui Vacation Rentals</p>
+    <!---<a href="" class="button">Read More</a>--->
+  </header>
+
+  <div class="container">
+    <div class="kkn-condo">
+      <h2><a href="{% url 'kkn'%}">Our Kihei Kai Nani Condo</a></h2>
+    </div>
+    <div class="ps-condo">
+      <h2><a href="{% url 'pacific_shores'%}">Our Pacific Shores Condo</a></h2>
+    </div>
+    <div class="guide">
+      <h2><a href="{% url 'guide'%}">Our Maui Guide</a></h2>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-box">
+      <h4>Our VRBO Listings</h4>
+      <a href="https://www.vrbo.com/406623">Kihei Kai Nani</a><br>
+      <a href="https://www.vrbo.com/858569">Pacific Shores</a>
+    </div>
+    <div class="footer-box">
+      <h4>Contact Us</h4>
+      <a href="mailto:jeremy@stayinkihei.com" target="_top">jeremy@stayinkihei.com</a>
+      <p>(303)328-7705</p>
+    </div>
+    <div class="footer-box">
+      <h4>Social Media</h4>
+      <p>facebook</p>
+      <p>youtube</p>
+    </div>
+    <div id="tax-box" class="footer-box">
+      <h4>On Island Manager and Host</h4>
+      <a href="http://sunnymauivacations.com/">Sunny Maui Vacations</a>
+      <p>General Excise Tax - GE-105-098-2400-01<br>
+               Transient Accommodations - TA-105-098-2400-01</p>
+    </div>
+</body>
+</html>
