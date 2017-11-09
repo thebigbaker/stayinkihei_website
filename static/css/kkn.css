@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #5C79A1 !important;
+  margin: 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+}
+
+.container h2 {
+  text-align: center;
+  margin-top: 20px;
+  font-style: italic;
+}
+
+
+
+/*----info section----*/
+.info-container {
+  display:grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  margin: 0;
+  border-bottom: 1px solid black;
+  grid-gap: 20px;
+  padding: 20px 5px 10px 5px;
+  grid-template-areas:
+    "info-title info-content info-content info-content info-content"
+    "info-title info-content info-content info-content info-content"
+    "info-title info-content info-content info-content info-content"
+    ". video video video ."
+}
+
+
+.info-title {
+  grid-area: info-title;
+  margin-left: 0;
+}
+
+.info-title h4 {
+  font-size: 20px;
+}
+
+
+.info-content {
+  grid-area: info-content;
+  margin: 0;
+  font-size: 14px;
+}
+
+.video {
+  grid-area: video;
+  justify-self: center;
+  margin: 0;
+  pagging: 20px;
+  text-align: center;
+}
+
+
+/*----amenities section----*/
+.amenities-container {
+  display:grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  margin: 0;
+  margin-top: 20px;
+  border-bottom: 1px solid black;
+  grid-gap: 20px;
+  padding: 20px 5px 10px 5px;
+  grid-template-areas:
+    "amenities-title sleeping sleeping bath bath"
+    "amenities-title entertainment entertainment kitchen kitchen"
+    "amenities-title beach-items beach-items telephone telephone"
+    "amenities-title ac ac internet internet"
+
+}
+
+.amenities-container p {
+  font-size: 14px;
+}
+
+.amenities-container h5 {
+  font-size: 18px;
+}
+
+.amenities-title {
+  grid-area: amenities-title;
+}
+
+.amenities-title h4 {
+  font-size: 20px;
+}
+
+.sleeping {
+  grid-area: sleeping;
+}
+
+.bath {
+  grid-area: bath;
+}
+
+.entertainment {
+  grid-area: entertainment;
+}
+
+.internet {
+  grid-area: internet;
+}
+
+.beach-items {
+  grid-area: beach-items;
+}
+
+.kitchen {
+  grid-area: kitchen;
+}
+
+.ac {
+  grid-area: ac;
+}
+
+.telephone {
+  grid-area: telephone;
+}
+
+
+/*----facilities section----*/
+.facilities-container {
+  display:grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  margin: 0;
+  margin-top: 20px;
+  border-bottom: 1px solid black;
+  grid-gap: 20px;
+  padding: 20px 5px 10px 5px;
+  grid-template-areas:
+    "facilities-title parking laundry outside outside"
+}
+
+.facilities-container p {
+  font-size: 14px;
+}
+
+.facilities-container h5 {
+  font-size: 18px;
+}
+
+.facilities-title {
+  grid-area: facilities-title;
+}
+
+.facilities-title h4 {
+  font-size: 20px;
+}
+
+.parking {
+  grid-area: parking;
+}
+
+.laundry {
+  grid-area: laundry;
+}
+
+.outside {
+  grid-area: outside;
+}
+
+
+/*----policies section----*/
+.policies-container {
+  display:grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  margin: 0;
+  margin-top: 20px;
+  grid-gap: 20px;
+  padding: 20px 5px 10px 5px;
+  grid-template-areas:
+    "policies-title check-in check-out info info"
+}
+
+.ploicies-container p {
+  font-size: 14px;
+}
+
+.policies-container h5 {
+  font-size: 18px;
+}
+
+.policies-title {
+  grid-area: policies-title;
+}
+
+.policies-title h4 {
+  font-size: 20px;
+}
+
+.check-in {
+  grid-area: check-in;
+}
+
+.check-out {
+  grid-area: check-out;
+}
+
+.info {
+  grid-area: info;
+}
+
+
+.footer {
+  display: flex;
+  background-color: #1F487E;
+  color: #fff;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #c9cdd3;
+}
+
+.footer a:hover {
+  color: #083066;
+
+}
+
+.footer p {
+  font-size: 14px;
+}
+
+.footer h4 {
+  font-size: 17px;
+  color: #fff;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.footer-box {
+  padding: 15px;
+  flex-basis: 20%;
+  text-align: center;
+}
+
+/*.contact-box {
+  padding: 15px;
+  flex-basis: 20%;
+  text-align: center;
+}
+
+.social-box {
+  padding: 15px;
+  flex-basis: 20%;
+  text-align: center;
+}
+
+.tax-box {
+  padding: 15px;
+  flex-basis: 20%;
+  text-align: center;
+}*/
+
+#tax-box p {
+  font-size: 11px;
+}

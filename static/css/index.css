@@ -81,10 +81,10 @@ body {
   "ps-condo ps-condo ps-condo ps-condo guide guide"
   /*"footer  footer footer footer footer footer"*/
   }
-  .footer {
-    display: flex;
-    justify-content: space-between;
-    }
+.footer {
+  display: flex;
+  justify-content: space-between;
+  }
 }
 
 
