@@ -1,1 +1,64 @@
-<h1>Guide Page</h1>
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/guide.css' %}">
+</head>
+<body>
+  <header id="showcase">
+    <h1>Our Maui Guide</h1>
+  </header>
+
+  <div class="container">
+    <div class="beaches">
+      <h2><a href="{% url 'beaches'%}">Our Favorite Beaches</a></h2>
+    </div>
+    <div class="activities">
+      <h2><a href="{% url 'activities'%}">Our Favorite Activities</a></h2>
+    </div>
+    <div class="restaurants">
+      <h2><a href="{% url 'places_to_eat'%}">Our Favorite Places to Eat</a></h2>
+    </div>
+    <div class="more-info">
+      <h2><a href="{% url 'more_maui_info'%}">More Maui Info</a></h2>
+    </div>
+  </div>
+
+  <div class="footer">
+      <div id="listings" class="footer-box">
+        <h4>Our VRBO Listings</h4>
+        <a href="https://www.vrbo.com/406623">Kihei Kai Nani</a><br><br>
+        <a href="https://www.vrbo.com/858569">Pacific Shores</a>
+      </div>
+      <div id="contact" class="footer-box">
+        <h4>Contact Us</h4>
+        <a href="mailto:jeremy@stayinkihei.com" target="_top">jeremy@stayinkihei.com</a>
+        <p>(303)328-7705</p>
+      </div>
+      <div id="social=media" class="footer-box">
+        <h4>Social Media</h4>
+        <a href="https://www.facebook.com/StayInKihei/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+        <br>
+        <a href="https://www.youtube.com/user/stayinkihei"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+      </div>
+      <div id="pm" class="footer-box">
+        <h4>On Island Manager and Host</h4>
+        <a href="http://sunnymauivacations.com/">Sunny Maui Vacations</a>
+      </div>
+      <div id="tax-info" class="footer-box">
+        <h4>Tax</h4>
+        <p>General Excise Tax - GE-105-098-2400-01<br>
+           Transient Accommodations - TA-105-098-2400-01</p>
+      </div>
+      <div id="copyright" class="footer-box">
+        <h4>&copy 2017 by Stay in Kihei</h4>
+      </div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,324 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #5C79A1;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+
+#showcase {
+  background-image: url('../imgs/condos/kam_morning.jpg');
+  height: 65vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20;
+  line-height: 1.2;
+  width: 100%;
+}
+
+#showcase image {
+  width: 100%;
+  height: auto;
+}
+
+#showcase h1 {
+  font-size: 70px;
+  color: #fff;
+  text-shadow: 5px 5px 10px black;
+  font-weight: bold;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.container p {
+  font-size: 17px;
+}
+.carousel-item > img {
+  width: 100%;
+  height: 400px;
+}
+
+/*---info section---*/
+.info-container {
+  margin-top: 20px;
+  fs
+
+}
+
+
+.info-content {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+
+/*---iframe video responsive settings*/
+.video-container {
+  margin-top: 10px;
+  position: relative;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container-16x9 {
+  padding-bottom: 56.25%;
+}
+
+.video-container-4x3 {
+  padding-bottom: 75%;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*---amenitites section---*/
+.amenities {
+  margin-top: 10px;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/*---facilities section---*/
+.facilities {
+  margin-top: 10px;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/*---policies section---*/
+.policies {
+  margin-top: 10px;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+
+/*---footer section---*/
+.footer {
+  display: grid;
+  background-color: #1F487E;
+  color: #fff;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+  "listings contact"
+  "social-media pm"
+  "tax-info copyright"
+}
+
+
+#listings {
+  grid-area: listings;
+}
+
+#contact {
+  grid-area: contact;
+}
+
+#social-media {
+  grid-area: social-media;
+}
+
+#pm {
+  grid-area: pm;
+}
+
+#tax-info {
+  grid-area: tax-info;
+}
+
+#copyright {
+  grid-area: copyright;
+}
+
+
+.footer {
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.footer i {
+  font-size: 2.5em;
+}
+.footer a {
+  text-decoration: none;
+  color: #c9cdd3;
+}
+
+.footer a:hover {
+  color: #083066;
+
+}
+
+.footer p {
+  font-size: .85em;
+}
+
+.footer h4 {
+  font-size: 1em;
+  color: #fff;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.footer-box {
+  padding: 15px;
+  flex-basis: 20%;
+  text-align: center;
+
+}
+
+
+/*---screens larger than 768px---*/
+@media(min-width: 768px) {
+
+  /*---amenities section---*/
+  .amenities {
+  display:grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  margin: 0;
+  margin-top: 10px;
+  border-bottom: 1px solid black;
+  grid-gap: 20px;
+  padding: 20px 5px 10px 5px;
+  grid-template-areas:
+    "amenities-title sleeping sleeping bath bath"
+    "amenities-title entertainment entertainment kitchen kitchen"
+    "amenities-title beach-items beach-items telephone telephone"
+    "amenities-title ac ac internet internet"
+  }
+
+  .amenities-title {
+    grid-area: amenities-title;
+  }
+
+
+  .sleeping {
+    grid-area: sleeping;
+  }
+
+  .bath {
+    grid-area: bath;
+  }
+
+  .entertainment {
+    grid-area: entertainment;
+  }
+
+  .internet {
+    grid-area: internet;
+  }
+
+  .beach-items {
+    grid-area: beach-items;
+  }
+
+  .kitchen {
+    grid-area: kitchen;
+  }
+
+  .ac {
+    grid-area: ac;
+  }
+
+  .telephone {
+    grid-area: telephone;
+  }
+
+
+/*---facilities section---*/
+.facilities {
+  display:grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  margin: 0;
+  margin-top: 10px;
+  border-bottom: 1px solid black;
+  grid-gap: 20px;
+  padding: 20px 5px 10px 5px;
+  grid-template-areas:
+    "facilities-title parking laundry outside outside"
+}
+
+
+.facilities-title {
+  grid-area: facilities-title;
+}
+
+
+.parking {
+  grid-area: parking;
+}
+
+.laundry {
+  grid-area: laundry;
+}
+
+.outside {
+  grid-area: outside;
+}
+
+/*---policies section---*/
+.policies {
+  display:grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  margin: 0;
+  margin-top: 10px;
+  grid-gap: 20px;
+  padding: 20px 5px 10px 5px;
+  grid-template-areas:
+    "policies-title check-in check-out info info"
+}
+
+.policies-title {
+  grid-area: policies-title;
+}
+
+.check-in {
+  grid-area: check-in;
+}
+
+.check-out {
+  grid-area: check-out;
+}
+
+.info {
+  grid-area: info;
+}
+
+
+/*---footer section---*/
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #1F487E;
+  color: #fff;
+}
+
+}
+
+@media(min-width: 992px) {
+  /*---carousel resize---*/
+  .carousel-item > img {
+    width: 100%;
+    height: 600px;
+  }
+}
