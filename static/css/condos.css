@@ -186,7 +186,7 @@ body {
 
 
 /*---screens larger than 768px---*/
-@media(min-width: 768px) {
+@media(min-width: 648px) {
 
   /*---amenities section---*/
   .amenities {
