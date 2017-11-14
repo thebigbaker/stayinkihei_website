@@ -41,10 +41,9 @@ body {
   grid-gap: 3px;
   background-color: #5C79A1;
   grid-template-areas:
-    "beaches"
-    "activities"
-    "restaurants"
-    "more-info"
+    "smbeaches"
+    "wmbeaches"
+    "nmbeaches"
 }
 
 .container a {
@@ -59,8 +58,8 @@ body {
     font-size: 28px;
   }
 
-.beaches {
-  grid-area: beaches;
+.south_beaches {
+  grid-area: smbeaches;
   background-image: url(../imgs/guide/kam_2.jpg);
   background-size: cover;
   background-position: center;
@@ -68,25 +67,17 @@ body {
 }
 
 
-.activities {
-  grid-area: activities;
+.west_beaches {
+  grid-area: wmbeaches;
   background-image: url(../imgs/guide/honolua.jpg);
   background-size: cover;
   background-position: center;
   border-radius: 5px;
 }
 
-.restaurants {
-  grid-area: restaurants;
+.north_beaches {
+  grid-area: nmbeaches;
   background-image: url(../imgs/guide/food.jpg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 5px;
-}
-
-.more-info {
-  grid-area: more-info;
-  background-image: url(../imgs/guide/flower.jpg);
   background-size: cover;
   background-position: center;
   border-radius: 5px;
@@ -131,6 +122,11 @@ body {
 }
 
 
+.footer {
+  
+  padding: 20px;
+}
+
 .footer i {
   font-size: 2.5em;
 }
@@ -173,10 +169,10 @@ body {
   background-color: #5C79A1;
   margin-top: 5px;
   grid-template-areas:
-    "beaches beaches beaches activities activities activities"
-    "beaches beaches beaches activities activities activities"
-    "restaurants restaurants restaurants more-info more-info more-info"
-    "restaurants restaurants restaurants more-info more-info more-info"
+    "smbeaches smbeaches smbeaches smbeaches nmbeaches nmbeaches"
+    "smbeaches smbeaches smbeaches smbeaches nmbeaches nmbeaches"
+    "wmbeaches wmbeaches wmbeaches wmbeaches nmbeaches nmbeaches"
+    "wmbeaches wmbeaches wmbeaches wmbeaches nmbeaches nmbeaches"
 
   }
 

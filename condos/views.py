@@ -14,7 +14,7 @@ class PacificShoresView(TemplateView):
     template_name = 'condos/ps.html'
 
 class BeachesView(TemplateView):
-    template_name = 'beaches/beaches.html'
+    template_name = 'guide/beaches/beaches.html'
 
 class SouthMauiView(TemplateView):
     template_name= 'guide/beaches/south_maui_beaches/south_maui_beaches.html'
