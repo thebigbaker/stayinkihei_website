@@ -1,80 +1,65 @@
-{% extends 'base.html' %}
+<!DOCTYPE html>
 {% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/west_maui_beaches.css' %}">
+</head>
+<body>
+  <header id="showcase">
+    <h1>Our Favorite<br>South Maui Beaches</h1>
+  </header>
 
-{% block title %} Beaches {% endblock %}
-
-
-<!---{% block additional_styles %}
-<style>
-body {
-  font-family: arial;
-  background: url({% static 'imgs/index/palm_trees_sunglow.jpg' %}) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-</style>
-{% endblock %}--->
-
-
-{%block main%}
-<div class="west-beaches-block">
-  <div class="card-deck">
-    <div class="card">
-      <a href="{% url 'kaanapali_beach' %}">
-        <img class="card-img-top" src="{% static 'imgs/beaches/south_maui/poolena.jpg' %}" alt="Card image cap">
-      </a>
-      <div class="card-body">
-        <h4 class="card-title">Ka'anapali Beach</h4>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Click the picture for more Ka'anapali Beach pictures and information!</small>
-      </div>
+  <div class="container">
+    <div class="kaanapali">
+      <h2><a href="{% url 'kaanapali_beach'%}">Ka'anapali Beach</a></h2>
     </div>
-
-    <div class="card">
-      <a href="{% url 'napili_bay' %}">
-        <img class="card-img-top" src="{% static 'imgs/beaches/south_maui/poolena.jpg' %}" alt="Card image cap">
-      </a>
-      <div class="card-body">
-        <h4 class="card-title">Napili Bay</h4>
-        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Click the picture for more Napili Bay pictures and information!</small>
-      </div>
+    <div class="napili">
+      <h2><a href="{% url 'napili_bay'%}">Napili Bay</a></h2>
+    </div>
+    <div class="kapalua">
+      <h2><a href="{% url 'kapalua_bay'%}">Kapalua Bay</a></h2>
+    </div>
+    <div class="honolua">
+      <h2><a href="{% url 'honolua_bay'%}">Honolua Bay</a></h2>
     </div>
   </div>
 
-  <div class="card-deck">
-    <div class="card">
-      <a href="{% url 'kapalua_bay' %}">
-        <img class="card-img-top" src="{% static 'imgs/beaches/south_maui/poolena.jpg' %}" alt="Card image cap">
-      </a>
-      <div class="card-body">
-        <h4 class="card-title">Kapalua Bay</h4>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+  <div class="footer">
+      <div id="listings" class="footer-box">
+        <h4>Our VRBO Listings</h4>
+        <a href="https://www.vrbo.com/406623">Kihei Kai Nani</a><br>
+        <a href="https://www.vrbo.com/858569">Pacific Shores</a>
       </div>
-      <div class="card-footer">
-        <small class="text-muted">Click the picture for more Kapalua Bay pictures and information!</small>
+      <div id="contact" class="footer-box">
+        <h4>Contact Us</h4>
+        <a href="mailto:jeremy@stayinkihei.com" target="_top">jeremy@stayinkihei.com</a>
+        <p>(303)328-7705</p>
+      </div>
+      <div id="social=media" class="footer-box">
+        <h4>Social Media</h4>
+        <a href="https://www.facebook.com/StayInKihei/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+        <br>
+        <a href="https://www.youtube.com/user/stayinkihei"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+      </div>
+      <div id="pm" class="footer-box">
+        <h4>On Island Manager and Host</h4>
+        <a href="http://sunnymauivacations.com/">Sunny Maui Vacations</a>
+      </div>
+      <div id="tax-info" class="footer-box">
+        <h4>Tax</h4>
+        <p>General Excise Tax - GE-105-098-2400-01<br>
+           Transient Accommodations - TA-105-098-2400-01</p>
+      </div>
+      <div id="copyright" class="footer-box">
+        <h4>&copy 2017 by Stay in Kihei</h4>
       </div>
     </div>
 
-    <div class="card">
-      <a href="{% url 'honolua_bay' %}">
-        <img class="card-img-top" src="{% static 'imgs/beaches/south_maui/poolena.jpg' %}" alt="Card image cap">
-      </a>
-      <div class="card-body">
-        <h4 class="card-title">Honolua Bay</h4>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Click the picture for more Honolua Bay pictures and information!</small>
-      </div>
-    </div>
-  </div>
-</div>
 
-{% endblock %}
+</body>
+</html>

@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin:0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  background-color: #5C79A1;
+}
+
+
+#showcase {
+  background-image: url(../imgs/guide/palms.jpg);
+  height: 65vh; /*view port units (100 units in a screen)*/
+  background-size: cover;
+  background-position: center;
+  display: flex; /*displays flex but default is all in one row*/
+  flex-direction: column; /*changes flex to column*/
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20; /* keeps text off sides when window shrinks - 0 top/bottom, 20 left/right*/
+  line-height: 1.2;
+}
+
+#showcase h1 {
+  font-size: 80px;
+  color: #fff;
+  text-shadow: 5px 5px 10px black;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(150px, auto);
+  margin-top: 3px;
+  margin-bottom: 3px;
+  grid-gap: 3px;
+  background-color: #5C79A1;
+  grid-template-areas:
+    "kaanapali"
+    "napili"
+    "kapalua"
+    "honolua"
+
+}
+
+.container a {
+  padding: 10px;
+  color: #fff;
+  font-size: 25px;
+  text-shadow: 5px 5px 10px black;
+  text-decoration: none;
+}
+
+.container a:hover {
+    font-size: 28px;
+  }
+
+.kaanapali {
+  grid-area: kaanapali;
+  background-image: url(../imgs/guide/kam_2.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+
+
+.napili {
+  grid-area: napili;
+  background-image: url(../imgs/guide/honolua.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+
+.kapalua {
+  grid-area: kapalua;
+  background-image: url(../imgs/guide/honolua.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+
+.honolua {
+  grid-area: honolua;
+  background-image: url(../imgs/guide/food.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+
+
+/*---footer section---*/
+.footer {
+  display: grid;
+  background-color: #1F487E;
+  color: #fff;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+  "listings contact"
+  "social-media pm"
+  "tax-info copyright"
+}
+
+#listings {
+  grid-area: listings;
+}
+
+#contact {
+  grid-area: contact;
+}
+
+#social-media {
+  grid-area: social-media;
+}
+
+#pm {
+  grid-area: pm;
+}
+
+#tax-info {
+  grid-area: tax-info;
+}
+
+#copyright {
+  grid-area: copyright;
+}
+
+
+.footer i {
+  font-size: 1.5em;
+}
+.footer a {
+  text-decoration: none;
+  color: #c9cdd3;
+  font-size: 11px;
+}
+
+.footer a:hover {
+  color: #083066;
+
+}
+
+.footer p {
+  font-size: 11px;;
+}
+
+.footer h4 {
+  font-size: 12px;
+  color: #fff;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.footer-box {
+  padding: 15px;
+  flex-basis: 20%;
+  text-align: center;
+
+}
+
+@media(min-width: 768px){
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: minmax(150px, auto);
+  margin-left: 5px;
+  margin-right: 5px;
+  grid-gap: 5px;
+  background-color: #5C79A1;
+  margin-top: 5px;
+  grid-template-areas:
+  "kaanapali kaanapali kaanapali napili napili napili"
+  "kaanapali kaanapali kaanapali napili napili napili"
+  "kapalua kapalua kapalua honolua honolua honolua"
+  "kapalua kapalua kapalua honolua honolua honolua"
+  }
+
+  .container a {
+    font-size: 40px;
+  }
+
+  .container a:hover {
+    font-size: 45px;
+  }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  }
+}
