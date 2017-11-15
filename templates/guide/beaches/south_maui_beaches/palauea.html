@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Palauea Beach</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/beaches.css' %}">
+</head>
+<body>
+  <header id="showcase">
+    <h1>Palauea Beach</h1>
+  </header>
+  <div class="container">
+    <section class="info">
+      <h3>Palauea Beach</h3>
+      <p>Palauea means "lazy," which is fitting because if you get here early most mornings, you will feel like you have this great stretch of beach all to yourself!  No resorts front this beach (just a few very expensive houses!), so it's much less crowded than Wailea Beach or even Polo Beach.</p>
+      <p>The sand here is a little different than the sand at other South Maui beaches in that you will see more seashells and seashell fragments along this area.  The sandy bottom and gentle slope into the water makes this a great swimming beach when the swell is low and when the waves are coming in, it's a fun body boarding beach.</p>
+      <p>The snorkeling at the rock formations on either side of the beach can be fantastic.  We've seen lots of fish, a few turtles, eels, octopus (check out the video below of me playing "peek-a-boo" w/ an octopus right off the left reef) and although we haven't seen any yet, we've had a few people tell us they've spotted manta rays off the reef.</p>
+      <p>There are no life guards, bathrooms or showers here, although we did see a couple of porta potties last time we were here.  There's also no parking lot, but there are some areas to park off the street that's about short 30 yard walk to the beach from your car. </p>
+      <p>To get here from Kihei, drive through Wailea south along Wailea Alanui Dr.  Once you get past the Fairmont resort, take a right onto Kaukahi St which will change into Makena Rd.  Marked on the map below is where you will find off street parking.</p>
+    </section>
+
+    <section class="map map-16x9">
+      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1FP_7gWnDThnuoIb4jPmM5TlE3vE"></iframe>
+    </section>
+
+    <section class="video video-16x9">
+      <iframe src="https://www.youtube.com/embed/ZlDae9RIqSs" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section class="photos">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="{% static 'imgs/condos/kihei_kai_nani/bath_one.jpg' %}" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="{% static 'imgs/condos/kihei_kai_nani/bedroom_one.jpg' %}" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="{% static 'imgs/condos/kihei_kai_nani/living_two.jpg' %}" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <div class="footer">
+      <div id="listings" class="footer-box">
+        <h4>Our VRBO Listings</h4>
+        <a href="https://www.vrbo.com/406623">Kihei Kai Nani</a><br>
+        <a href="https://www.vrbo.com/858569">Pacific Shores</a>
+      </div>
+      <div id="contact" class="footer-box">
+        <h4>Contact Us</h4>
+        <a href="mailto:jeremy@stayinkihei.com" target="_top">jeremy@stayinkihei.com</a>
+        <p>(303)328-7705</p>
+      </div>
+      <div id="social=media" class="footer-box">
+        <h4>Social Media</h4>
+        <a href="https://www.facebook.com/StayInKihei/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+        <br>
+        <a href="https://www.youtube.com/user/stayinkihei"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+      </div>
+      <div id="pm" class="footer-box">
+        <h4>On Island Manager and Host</h4>
+        <a href="http://sunnymauivacations.com/">Sunny Maui Vacations</a>
+      </div>
+      <div id="tax-info" class="footer-box">
+        <h4>Tax</h4>
+        <p>General Excise Tax - GE-105-098-2400-01<br>
+           Transient Accommodations - TA-105-098-2400-01</p>
+      </div>
+      <div id="copyright" class="footer-box">
+        <h4>&copy 2017 by Stay in Kihei</h4>
+      </div>
+  </div>
+</body>
+</html>

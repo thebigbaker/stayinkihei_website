@@ -14,20 +14,20 @@ body {
 
 #showcase {
   background-image: url(../imgs/guide/palms.jpg);
-  height: 65vh; /*view port units (100 units in a screen)*/
+  height: 65vh;
   background-size: cover;
   background-position: center;
-  display: flex; /*displays flex but default is all in one row*/
-  flex-direction: column; /*changes flex to column*/
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 20; /* keeps text off sides when window shrinks - 0 top/bottom, 20 left/right*/
+  padding: 0 20;
   line-height: 1.2;
 }
 
 #showcase h1 {
-  font-size: 80px;
+  font-size: 60px;
   color: #fff;
   text-shadow: 5px 5px 10px black;
 }
