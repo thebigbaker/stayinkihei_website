@@ -13,7 +13,7 @@ body {
 
 #showcase {
   background-image: url(../imgs/guide/palms.jpg);
-  height: 65vh;
+  height: 50vh;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -33,6 +33,7 @@ body {
 
 .container {
   margin-top: 20px;
+  color: #555;
 }
 
 .info {
