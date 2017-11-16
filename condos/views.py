@@ -74,9 +74,6 @@ class NorthMauiBeachesView(TemplateView):
 class ActivitiesView(TemplateView):
     template_name = 'guide/activities/activities.html'
 
-class ActivitiesView(TemplateView):
-    template_name = 'guide/activities/activities.html'
-
 class OldLahainaLuauView(TemplateView):
     template_name = 'guide/activities/old_lahaina_luau.html'
 

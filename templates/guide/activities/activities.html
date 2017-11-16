@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Activities</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/activities.css' %}">
+</head>
+<body>
+  <header id="showcase">
+    <h1>Our Favorite<br>Maui Activities</h1>
+  </header>
+
+  <div class="container">
+    <div class="lavendar">
+      <h2><a href="{% url 'alii_kula_lavendar_farm'%}">Ali'i Lavendar Farm</a></h2>
+    </div>
+    <div class="aquarium">
+      <h2><a href="{% url 'aquarium'%}">Aquarium</a></h2>
+    </div>
+    <div class="hana">
+      <h2><a href="{% url 'drive_to_hana'%}">Drive to Hana</a></h2>
+    </div>
+    <div class="haleakala">
+      <h2><a href="{% url 'haleakala'%}">Haleakala</a></h2>
+    </div>
+    <div class="lpbay">
+      <h2><a href="{% url 'la_perouse_bay'%}">La Persouse Bay</a></h2>
+    </div>
+    <div class="parties">
+      <h2><a href="{% url 'maui_friday_town_parties'%}">Friday Town Parties</a></h2>
+    </div>
+    <div class="luau">
+      <h2><a href="{% url 'old_lahaina_luau'%}">Old Lahaina Luau</a></h2>
+    </div>
+    <div class="snorkeling">
+      <h2><a href="{% url 'snorkeling'%}">Snorkeling</a></h2>
+    </div>
+    <div class="whales">
+      <h2><a href="{% url 'whale_watching'%}">Whale Watching</a></h2>
+    </div>
+  </div>
+
+  <div class="footer">
+      <div id="listings" class="footer-box">
+        <h4>Our VRBO Listings</h4>
+        <a href="https://www.vrbo.com/406623">Kihei Kai Nani</a><br>
+        <a href="https://www.vrbo.com/858569">Pacific Shores</a>
+      </div>
+      <div id="contact" class="footer-box">
+        <h4>Contact Us</h4>
+        <a href="mailto:jeremy@stayinkihei.com" target="_top">jeremy@stayinkihei.com</a>
+        <p>(303)328-7705</p>
+      </div>
+      <div id="social=media" class="footer-box">
+        <h4>Social Media</h4>
+        <a href="https://www.facebook.com/StayInKihei/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+        <br>
+        <a href="https://www.youtube.com/user/stayinkihei"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+      </div>
+      <div id="pm" class="footer-box">
+        <h4>On Island Manager and Host</h4>
+        <a href="http://sunnymauivacations.com/">Sunny Maui Vacations</a>
+      </div>
+      <div id="tax-info" class="footer-box">
+        <h4>Tax</h4>
+        <p>General Excise Tax - GE-105-098-2400-01<br>
+           Transient Accommodations - TA-105-098-2400-01</p>
+      </div>
+      <div id="copyright" class="footer-box">
+        <h4>&copy 2017 by Stay in Kihei</h4>
+      </div>
+    </div>
+
+
+</body>
+</html>
