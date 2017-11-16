@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Maui Ocean Center and Aquarium</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/guide_pages.css' %}">
+</head>
+<body>
+  <header id="showcase">
+    <h1>Maui Ocean Center and Aquarium</h1>
+  </header>
+  <div class="container">
+    <section class="info">
+      <h3>Maui Ocean Center and Aquarium</h3>
+      <p>Located in Ma'alea, the aquarium only houses species that are found in Hawaiian waters. Open from 9am - 5pm, it's about $23 per adult for a day pass and $34 for weekly passes. If you have kids, the weekly pass is a great idea. Our daughter loves the aquarium and we visit the aquarium often.</p>
+      <p>Among the exhibits are the tide pool, turtle lagoon, hammerhead shark exhibit and the large aquarium w/ a walk through tunnel that houses different rays, large fish, and several large sharks (last time we were there they had 2 tiger sharks!).</p>
+    </section>
+
+    <section class="map map-16x9">
+      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1McPgtzKw97K8P4fZJaZOwtsWdf4"></iframe>
+    </section>
+
+    <section class="photos">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="{% static 'imgs/condos/kihei_kai_nani/bath_one.jpg' %}" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="{% static 'imgs/condos/kihei_kai_nani/bedroom_one.jpg' %}" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="{% static 'imgs/condos/kihei_kai_nani/living_two.jpg' %}" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <div class="footer">
+      <div id="listings" class="footer-box">
+        <h4>Our VRBO Listings</h4>
+        <a href="https://www.vrbo.com/406623">Kihei Kai Nani</a><br>
+        <a href="https://www.vrbo.com/858569">Pacific Shores</a>
+      </div>
+      <div id="contact" class="footer-box">
+        <h4>Contact Us</h4>
+        <a href="mailto:jeremy@stayinkihei.com" target="_top">jeremy@stayinkihei.com</a>
+        <p>(303)328-7705</p>
+      </div>
+      <div id="social=media" class="footer-box">
+        <h4>Social Media</h4>
+        <a href="https://www.facebook.com/StayInKihei/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+        <br>
+        <a href="https://www.youtube.com/user/stayinkihei"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+      </div>
+      <div id="pm" class="footer-box">
+        <h4>On Island Manager and Host</h4>
+        <a href="http://sunnymauivacations.com/">Sunny Maui Vacations</a>
+      </div>
+      <div id="tax-info" class="footer-box">
+        <h4>Tax</h4>
+        <p>General Excise Tax - GE-105-098-2400-01<br>
+           Transient Accommodations - TA-105-098-2400-01</p>
+      </div>
+      <div id="copyright" class="footer-box">
+        <h4>&copy 2017 by Stay in Kihei</h4>
+      </div>
+  </div>
+</body>
+</html>
